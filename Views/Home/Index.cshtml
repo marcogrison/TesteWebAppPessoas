@@ -1,0 +1,20 @@
+﻿@model List<WebApplication1.Models.Pessoa>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var pessoa in Model){
+            <tr>
+                <td>@pessoa.Nome</td>
+                <td>@pessoa.Idade</td>
+                <td>@pessoa.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
